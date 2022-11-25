@@ -36,8 +36,10 @@ Documented commands (type help <topic>):
 ========================================
 EOF  help  quit
 
-(hbnb) 
-(hbnb) 
+(hbnb)
+
+(hbnb)
+
 (hbnb) quit
 $
 
@@ -78,4 +80,4 @@ Delete an instance
 (hbnb) destroy BaseModel e37cf8df-351a-4df6-9d15-fd9331a5bfb2
 (hbnb) show BaseModel e37cf8df-351a-4df6-9d15-fd9331a5bfb2
 ** no instance found **
-(hbnb)
+(hbnb) 
