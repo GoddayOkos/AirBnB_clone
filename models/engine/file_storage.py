@@ -43,7 +43,6 @@ class FileStorage:
         Attributes:
             obj (Python object): The object to set
         """
-        #dictionary = obj.to_dict()
         key = '{}.{}'.format(type(obj).__name__, obj.id)
         FileStorage.__objects[key] = obj
 
