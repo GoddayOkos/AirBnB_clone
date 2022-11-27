@@ -44,7 +44,7 @@ class FileStorage:
             obj (Python object): The object to set
         """
         dictionary = obj.to_dict()
-        key = '{}.{}'.format(dictionary['__class__'], obj.id)
+        key = '{}.{}'.format(dictionary['__class__'], str(obj.id))
         FileStorage.__objects[key] = obj
 
     def save(self):
@@ -68,5 +68,5 @@ class FileStorage:
                 loaded_json = json.load(file1)
             for k, v in loaded_json.items():
                 FileStorage.__objects[k] = BaseModel(**v)
-        except Exception as e:
+        except Exception:
             pass
