@@ -24,7 +24,7 @@ class HBNBCommand(cmd.Cmd):
     """
     prompt = '(hbnb) '
     __class_set = {"BaseModel", "User", "State", "City", "Amenity", "Place",
-                    "Review"}
+                   "Review"}
 
     def do_EOF(self, args):
         """
